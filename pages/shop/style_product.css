@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*ให้ข้อความอยู่ตรงกลาง*/
+.wrapper {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/*กำหนดฟอนต์ให้กับข้อความที่อยู่ภายให้ h1*/
+.wrapper h1 {
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+/*ให้ข้อความอยู่ตรงกลางและกำหนดสีให้กับข้อความที่อยู่ภายใต้ h1 กับ p */
+.wrapper h1+p {
+    width: 60%;
+    margin: 0 auto 50px;
+    color: #fff;
+}
+
+/*แบ่งกรอบให้กับข้อความและให้อยู่ตรงกลาง*/
+.pricing_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*ใส่สีพื้นหลังให้กับกรอบ*/
+.pricing_wrapper .pricing_item {
+    width: 260px; /*ขนาดกรอบ*/
+    height:580px;
+    background: #969696;
+    /*background: linear-gradient(-45deg, #24ff72,#64b5f6);*/
+    margin: 5px 10px 50px;
+    padding: 30px 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+/*กำหนดฟอนต์ในคลาส */
+.pricing_wrapper .pricing_item h3 {
+    font-size: 20px;
+}
+
+/*กำหนดฟอนต์ และ สี ให่กับคลาส  ราคา*/
+.pricing_wrapper .pricing_item p.money {
+    margin: 50px 0 20px;
+    font-size: 25px;
+    color: #008080;
+}
+
+/**/
+.pricing_wrapper .pricing_item p.money span {
+    font-size: 12px;
+    color: #282828;
+}
+
+/*กำหนกสีให้กับข้อความในคลาส*/
+.pricing_wrapper .pricing_item p {
+    color: #282828;
+}
+
+/*กำหนดbutton ใส่สีให้ button*/
+.pricing_wrapper .pricing_item a.btn {
+    display: block;
+    margin-top: 20px;
+    background: linear-gradient(-45deg, #27b692, #009ACD);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+}
